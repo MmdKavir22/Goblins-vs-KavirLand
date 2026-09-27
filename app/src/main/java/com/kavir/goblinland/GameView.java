@@ -86,7 +86,7 @@ public class GameView extends GLSurfaceView {
 
         Renderer3D(Context c){ctx=c;}
 
-        @Override public void onSurfaceCreated(javax.microedition.khronos.egl.EGLConfig cfg){
+        @Override public void onSurfaceCreated(javax.microedition.khronos.opengles.GL10 gl, javax.microedition.khronos.egl.EGLConfig cfg){
             GLES20.glClearColor(.035f,.055f,.085f,1);
             GLES20.glEnable(GLES20.GL_DEPTH_TEST);
             GLES20.glEnable(GLES20.GL_CULL_FACE);

@@ -238,7 +238,7 @@ public class GameView extends View {
         p.setColor(Color.rgb(70,45,20)); c.drawRoundRect(w-230,48,w-28,59,5,5,p);
         p.setColor(Color.rgb(255,205,60)); c.drawRoundRect(w-230,48,w-230+202*(xp/(float)(level*100)),59,5,5,p);
         p.setTextSize(11); p.setColor(Color.LTGRAY); c.drawText("DMG "+damageDealt+"  SHOTS "+shots,w-230,70,p);
-        if(showFps){p.setColor(Color.WHITE);p.setTextSize(12);c.drawText("FPS "+fps,28,112,p);}
+        if(showFps){p.setColor(Color.WHITE);p.setTextSize(12);c.drawText("FPS "+fps,28,112,p);}\n        p.setColor(Color.argb(185,10,14,20)); c.drawRoundRect(w-78,82,w-14,126,13,13,p);\n        p.setColor(Color.WHITE); p.setTextSize(22); p.setTextAlign(Paint.Align.CENTER); c.drawText("⚙",w-46,112,p); p.setTextAlign(Paint.Align.LEFT);
     }
 
     private void drawControls(Canvas c,int w,int h) {
